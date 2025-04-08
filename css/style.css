@@ -1,0 +1,14 @@
+:root {
+    --bs-success: #4CAF50;
+    --bs-success-rgb: 76, 175, 80;
+  }
+  
+  /* Custom Styles */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+  }
+  
+  footer {
+    margin-top: auto;
+  }

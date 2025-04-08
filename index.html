@@ -1,0 +1,105 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plant Pallet | Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Plant Pallet</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Order Online & Booking</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Who Are We</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-light text-center py-5">
+    <div class="container">
+      <h1 class="display-5">Welcome to Plant Pallet</h1>
+      <p class="lead">Lorem ipsum dolor sit amet consectetur. Scelerisque suscipit pellentesque et id.</p>
+    </div>
+  </header>
+
+  <!-- Latest Offerings -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Latest Offerings</h2>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="order.html" class="btn btn-success">Order Now Online</a>
+        <a href="order.html" class="btn btn-outline-success">Make a reservation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-center">Tell us what you think</h2>
+      <form class="row g-3">
+        <div class="col-md-12">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="col-md-12">
+          <label for="email" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="col-md-12">
+          <label for="mobile" class="form-label">Your Mobile Number</label>
+          <input type="tel" class="form-control" id="mobile">
+        </div>
+        <div class="col-12">
+          <label for="message" class="form-label">Your Message</label>
+          <textarea id="message" class="form-control" rows="4"></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-4 pb-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5>Contact Us</h5>
+          <p>XXX-XXX-XXX</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Our Location</h5>
+          <p>January 2025</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Subscribe to Our Newsletter</h5>
+          <form class="d-flex">
+            <input type="email" class="form-control me-2" placeholder="Your Email">
+            <button class="btn btn-success" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <small>Copyright &copy; 2025 Plant Pallet</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
