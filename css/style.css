@@ -8,6 +8,20 @@
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
   }
+.header-image {
+  max-width: 100%;
+  height: 50%;
+  border-radius: 10%;
+}
+
+
+.content-image {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
   
   footer {
     margin-top: auto;
