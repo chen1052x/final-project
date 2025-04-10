@@ -1,7 +1,8 @@
 :root {
-    --bs-success: #4CAF50;
-    --bs-success-rgb: 76, 175, 80;
-  }
+  --btn-order: #2D6A4F;
+  --button-offering: #E0A733;
+  --button-about: #D17A50;
+}
   
   body {
     font-family: 'Segoe UI', sans-serif;
@@ -25,6 +26,75 @@
   height: 700px;
   border-radius: 1cm;
 }
+
+.header-image-about {
+  width: 100%;
+  object-fit: cover;
+  height: 850px;
+  border-radius: 1cm;
+}
+
+.food-menu {
+  width: 100%;
+  object-fit: cover;
+  height: 850px;
+  border-radius: 1cm;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+/* all buttons */
+
+.btn-order {
+  background-color: var(--btn-order);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-order:hover {
+  background-color: #245d44;
+}
+
+.button-about {
+  background-color: var(--button-about);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-about:hover {
+  background-color: #c56019;
+}
+
+.button-offering {
+  background-color: var(--button-offering);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-offering:hover {
+  background-color: #be9b29;
+}
+
+
 
 /* offering section */
 
