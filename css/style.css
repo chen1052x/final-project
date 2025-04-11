@@ -166,3 +166,13 @@
 .footer {
   background-color: #E0A733;
 }
+
+/* animation */
+
+.header-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-image:hover {
+  transform: scale(1.05);
+}
