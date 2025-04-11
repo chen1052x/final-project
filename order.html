@@ -1,107 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Plant Pallet - Order Online & Booking</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mrs+Saint+Delafield&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <section>
-    <div class="top-banner bg-success text-white text-center py-1">
-      Special spring menu now available!
-    </div>
-    
-    <div class="top-banner bg-warning text-dark text-center py-1">
-      Reserve now for Estern Monday — tables filling fast!
-    </div>
-  </section>
-
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="images/logo-plant-palette.svg" alt="Plant Pallet Logo" height="40">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="order.html">Order Online & Booking</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">Who Are We</a></li>
-        </ul>
+  <header role="banner">
+    <section>
+      <div class="top-banner bg-success text-white text-center py-1">
+        <p class="m-0">Special spring menu now available!</p>
       </div>
-    </div>
-  </nav>
+      <div class="top-banner bg-warning text-dark text-center py-1">
+        <p class="m-0">Reserve now for Easter Monday — tables filling fast!</p>
+      </div>
+    </section>
 
-  <header class="text-center py-5">
-    <div class="container">
-      <h1>Make Your Reservation</h1>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo-plant-palette.svg" alt="Plant Pallet homepage logo" height="40" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="order.html" aria-current="page">Order Online & Booking</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">Who Are We</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <section class="py-5">
-    <div class="container">
-      <div class="mb-3">
-        <label for="booking-date" class="form-label">Select a Date</label>
-        <input type="date" class="form-control" id="booking-date" name="booking-date">
+  <main id="main-content" role="main">
+    <header class="text-center py-5">
+      <div class="container">
+        <h1>Make Your Reservation</h1>
       </div>
-      <form class="row g-3">
-        <div class="col-md-12">
-          <label for="name" class="form-label">Your Name</label>
-          <input type="text" class="form-control" id="name" required>
-        </div>
-        <div class="col-md-12">
-          <label for="email" class="form-label">Your Email</label>
-          <input type="email" class="form-control" id="email" required>
-        </div>
-        <div class="col-md-12">
-          <label for="mobile" class="form-label">Your Mobile Number</label>
-          <input type="tel" class="form-control" id="mobile">
-        </div>
-        <div class="col-12">
-          <label for="message" class="form-label">Your Message</label>
-          <textarea id="message" class="form-control" rows="4"></textarea>
-        </div>
-        <div class="col-12 text-center">
-          <button type="submit" class="btn btn-success">Submit</button>
-        </div>
-      </form>
-    </div>
-  </section>
+    </header>
 
-  <section class="py-5 text-center">
-    <div class="container">
-      <h2 class="mb-4">Find us on</h2>
-      <div class="row py-5">
-        <picture class="col-4 mb-3">
-          <source srcset="images/ubereats-m.png" media="(max-width: 767px)">
-          <img src="images/ubereats.png" alt="ubereats-logo" class="img-fluid logo">
-        </picture>
-        <picture class="col-4 mb-3">
-          <source srcset="images/doordash-m.jpg" media="(max-width: 767px)">
-          <img src="images/doordash.jpg" alt="doordash-logo" class="img-fluid logo">
-        </picture>
-        <picture class="col-4 mb-3">
-          <source srcset="images/hungrypanda-m.jpg" media="(max-width: 767px)">
-          <img src="images/hungrypanda.jpg" alt="hungrypanda-logo" class="img-fluid logo">
-        </picture>
+    <section class="py-5" aria-labelledby="booking-form-heading">
+      <div class="container">
+        <h2 id="booking-form-heading" class="visually-hidden">Reservation Form</h2>
+        <div class="mb-3">
+          <label for="booking-date" class="form-label">Select a Date</label>
+          <input type="date" class="form-control" id="booking-date" name="booking-date" aria-required="true">
+        </div>
+        <form class="row g-3" role="form" aria-label="Reservation details">
+          <div class="col-md-12">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="col-md-12">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="col-md-12">
+            <label for="mobile" class="form-label">Your Mobile Number</label>
+            <input type="tel" class="form-control" id="mobile" name="mobile">
+          </div>
+          <div class="col-12">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea id="message" name="message" class="form-control" rows="4" aria-describedby="optional-note"></textarea>
+            <small id="optional-note" class="form-text text-muted">Optional</small>
+          </div>
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-success">Submit</button>
+          </div>
+        </form>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="text-white pt-4 pb-2 footer">
+    <section class="py-5 text-center" aria-labelledby="delivery-platforms-heading">
+      <div class="container">
+        <h2 id="delivery-platforms-heading" class="mb-4">Find us on</h2>
+        <div class="row py-5" role="list">
+          <picture class="col-4 mb-3" role="listitem">
+            <source srcset="images/ubereats-m.png" media="(max-width: 767px)">
+            <img src="images/ubereats.png" alt="Order on Uber Eats" class="img-fluid logo">
+          </picture>
+          <picture class="col-4 mb-3" role="listitem">
+            <source srcset="images/doordash-m.jpg" media="(max-width: 767px)">
+            <img src="images/doordash.jpg" alt="Order on DoorDash" class="img-fluid logo">
+          </picture>
+          <picture class="col-4 mb-3" role="listitem">
+            <source srcset="images/hungrypanda-m.jpg" media="(max-width: 767px)">
+            <img src="images/hungrypanda.jpg" alt="Order on HungryPanda" class="img-fluid logo">
+          </picture>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pt-4 pb-2 footer" role="contentinfo">
     <div class="container">
       <div class="row">
         <div class="col-md-4 mb-3">
           <h5>Contact Us</h5>
-          <p>(613) 555-3842</p>
+          <address>
+            <p>Phone: <a href="tel:+16135553842">(613) 555-3842</a></p>
+          </address>
         </div>
         <div class="col-md-4 mb-3">
           <h5>Our Location</h5>
@@ -109,14 +117,14 @@
         </div>
         <div class="col-md-4 mb-3">
           <h5>Subscribe to Our Newsletter</h5>
-          <form class="d-flex">
-            <input type="email" class="form-control me-2" placeholder="Your Email">
+          <form class="d-flex" role="form" aria-label="Newsletter subscription form">
+            <input type="email" class="form-control me-2" placeholder="Your Email" aria-label="Your Email" />
             <button class="btn btn-order" type="submit">Submit</button>
           </form>
         </div>
       </div>
       <div class="text-center mt-3">
-        <small>Copyright &copy; 2025 Plant Pallet</small>
+        <small>&copy; 2025 Plant Pallet. All rights reserved.</small>
       </div>
     </div>
   </footer>
